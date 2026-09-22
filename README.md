@@ -1,1 +1,2 @@
 # alu-machine_learning
+Git hub for the ALU machine learning project. This repository contains code and resources related to the development and implementation of machine learning algorithms for arithmetic logic unit (ALU) operations.
