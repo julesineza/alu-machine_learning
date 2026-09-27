@@ -1,0 +1,2 @@
+Advanced linear algrebra
+This directory contains work with advanced linear algebra concepts such as eigenvalues, eigenvectors, and matrix decompositions. It includes implementations of algorithms for computing these properties, as well as examples and exercises to help understand the underlying mathematics.
