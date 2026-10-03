@@ -1,29 +1,29 @@
 #!/usr/bin/env python3
+
 def poly_integral(poly, C=0):
-    # Validate C is an integer and not a boolean
-    if not isinstance(C, int) or isinstance(C, bool):
+    if not isinstance(poly, list) or not poly:
         return None
-        
-    # Validate poly is a list
-    if not isinstance(poly, list):
+
+    if not isinstance(C, int):
         return None
-        
-    # Validate all coefficients are numbers and not booleans
-    for coeff in poly:
-        if not isinstance(coeff, (int, float)) or isinstance(coeff, bool):
+
+    for coefficient in poly:
+        if not isinstance(coefficient, (int, float)):
             return None
-            
-    # Compute the integral coefficients
+
     result = [C]
-    for i, coeff in enumerate(poly):
-        val = coeff / (i + 1)
-        # Convert to integer if it is a whole number
-        if val == int(val):
-            val = int(val)
-        result.append(val)
-        
-    # Clean up trailing zeros to make the list as small as possible
-    # while result and result[-1] == 0:
-    #     result.pop()
-        
+
+    for i in range(len(poly)):
+        coefficient = poly[i]
+
+        new_coefficient = coefficient / (i + 1)
+
+        if new_coefficient.is_integer():
+            new_coefficient = int(new_coefficient)
+
+        result.append(new_coefficient)
+
+    while len(result) > 1 and result[-1] == 0:
+        result.pop()
+
     return result
