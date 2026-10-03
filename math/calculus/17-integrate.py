@@ -23,7 +23,7 @@ def poly_integral(poly, C=0):
         result.append(val)
         
     # Clean up trailing zeros to make the list as small as possible
-    while result and result[-1] == 0:
-        result.pop()
+    # while result and result[-1] == 0:
+    #     result.pop()
         
     return result
