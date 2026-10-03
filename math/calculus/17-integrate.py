@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def poly_integral(poly, C=0):
     # Validate C is an integer and not a boolean
     if not isinstance(C, int) or isinstance(C, bool):
