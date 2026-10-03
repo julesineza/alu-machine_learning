@@ -1,0 +1,2 @@
+alu machine learning 
+this diretory is for calculus related code and resources for the ALU machine learning project. It includes implementations of various calculus concepts and techniques that are used in the development of machine learning algorithms for ALU operations.
