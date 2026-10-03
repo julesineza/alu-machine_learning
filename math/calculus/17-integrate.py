@@ -10,8 +10,7 @@ def poly_integral(poly, C=0):
     Returns:
         list: Coefficients representing the integral, or None if
         poly or C is invalid.
-    """
-    
+    """ 
     if not isinstance(poly, list) or not poly:
         return None
 
